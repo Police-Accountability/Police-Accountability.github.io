@@ -96,13 +96,19 @@
       <div class="footer-columns w-row">
         <div class="footer-form-column w-col w-col-6 w-col-small-small-stack">
           <div class="w-form">
-            <form id="email-form" name="email-form" data-name="Email Form"><label for="name-2" class="field-label">Name</label><input type="text" class="w-input" maxlength="256" name="name-2" data-name="Name 2" placeholder="Name or pseudonym" id="name-2" required=""><label for="email-2" class="field-label-2">Email Address</label><input type="email" class="w-input" maxlength="256" name="email-2" data-name="Email 2" placeholder="email@domain.tld" id="email-2" required=""><label for="Message-2" class="field-label-2">Message</label><input type="text" class="w-input" maxlength="256" name="Message-2" data-name="Message 2" placeholder="Let us know your thoughts..." id="Message-2" required=""><input type="submit" value="SEND" data-wait="Please wait..." class="submit-button w-button"></form>
-            <div class="w-form-done">
-              <div>Thank you! Your submission has been received!</div>
-            </div>
-            <div class="w-form-fail">
-              <div>Oops! Something went wrong while submitting the form.</div>
-            </div>
+            <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/mnqggygo" method="post">
+              <fieldset id="fs-frm-inputs">
+                <label for="name" class="field-label">Name</label>
+                <input type="text" class="w-input" maxlength="256" name="name" data-name="Name 2" placeholder="Name or pseudonym" id="full-name" required="">
+                <label for="email" class="field-label-2">Email Address</label>
+                <input type="email" class="w-input" maxlength="256" name="email" data-name="Email 2" placeholder="email@domain.tld" id="email-address" required="">
+                <label for="message" class="field-label-2">Message</label>
+                <input type="text" class="w-input" maxlength="256" name="message" data-name="Message 2" placeholder="Let us know your thoughts..." id="email-subject" required="">
+                <input type="submit" value="SEND" data-wait="Please wait..." class="submit-button w-button">
+                <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+                <input id="form-btn" type="submit" value="Send">
+              </fieldset>  
+            </form>
           </div>
         </div>
         <div class="footer-social-column w-clearfix w-col w-col-2 w-col-small-small-stack">
